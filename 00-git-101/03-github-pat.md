@@ -91,6 +91,10 @@ git clone https://github.com/<nombre-usuario>/<nombre-repositorio>.git .
 
 ```
 
+> Recordar si estas en parallels para pegar
+> usar CTRL+SHIFT+Click ratón (ver en keyboards
+> vale como paste para git bash)
+
 Así, tenemos disponibles estos credenciales mientras el token sea válido
 (recuerda que cuando expiré tendrás que renovarlo desde la propia web de
 _GitHub_).
