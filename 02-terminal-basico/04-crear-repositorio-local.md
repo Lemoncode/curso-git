@@ -165,3 +165,8 @@ git push --set-upstream origin master
 
 Si no vamos al portal de Github y refrescamos la página del repo,
 podemos ver que se han subido lo cambios.
+
+Ya si introducimos nuevos cambios en ramas que están sincronizadas
+con el servidor (y los cambios ya están commiteadso en local) no
+nos harían falta parametros adicionales, simplemente
+ejecutaríamos _git push_.
