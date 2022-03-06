@@ -105,39 +105,40 @@ Tenemos que _index.html_ a vuelto al estado inicial.
 
 Y los fichero nuevos, al no estar en la rama incial se quedan como estan.
 
-Vamos a probar un segundo comando más rádical, imaginate que has estado
-jugando con tu rama y tienes cosas en stage, otras que no, ficheros nuevo...
-pero es todo tan desastroso que dices "mira quiero volver al punto inicial
-y cargarme tooooodooos los cambios"
-
-Primero preparamos el terreno:
+En 2019 apareció un nuevo comando _git restore_ este nos elimina los cambios
+de ficheros trackeados estén o no en staging
 
 ```bash
-git status
+git restore .
 ```
 
-Vamos a modificar el fichero index.html.
-
-Vamos a mandar a staging el fichero definitivo.txt
-
-```bash
-git add src/definitivo.txt
-```
-
-Si lo hemos hecho bien tendremos ficheros tanto en stage como no,
-así como fichero que si estaban en el commit de partida.
-
-Si ejecutamos _restore_
-
-```bash
-git restore
-```
-
-> Si te sale este error _git: 'restore' is not a git command._ puedes que tenga una versión antigua de Git, para saber en que versión estás ejecuta
+> Si te sale este error _git: 'restore' is not a git command._ puede que tengas una versión antigua de Git, para saber en que versión estás ejecuta
 > _git --version_
+
+¿Y si queremos borrar los archivos _untracked_? Mucho cuidado con esta opción,
+nos cargamos esos ficheros sin vuelta atrás.
+
+Para ello:
+
+Primero corremos una simulación y le pedimos que nos liste cuales son los ficheros
+que se va a cargar:
+
+```bash
+git clean -n
+```
+
+Una vez que revisamos los ficheros y nos aseguramos que los queremos eliminar
+ya ejecutamos el _clean_ (fijate el peligro que tiene que Git te obliga
+a que le pongas el _--force_)
+
+```bash
+git clean --force
+```
 
 # Referencias
 
 [Unstage files on Git](https://devconnected.com/how-to-unstage-files-on-git/)
 
 [Git restore](https://git-scm.com/docs/git-restore)
+
+[Git clean](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-use-the-git-clean-command)
