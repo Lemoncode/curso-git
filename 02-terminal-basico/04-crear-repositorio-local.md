@@ -83,15 +83,85 @@ git init
 ```
 
 Fijate que ahora nos aparece la carpeta oculta _.git_, ahí esta nuestro
-proyecto.
+proyecto (ls -a en linux para ver carpeta oculta).
 
-Vamos a commitear los cambios a nuestro repo local, primero tiramos de 
-un git status y.... 
+Vamos a commitear los cambios a nuestro repo local, primero tiramos de
+un git status y....
 
 ```bash
 git status
 ```
 
-¡ Sorpresa !
+¡ Sorpresa ! hay carpetas y ficheros temporales que no queremos subir
+¿Cómo podemos quitarlos? Vamos a crear un fichero .gitignore
+e indicar que ignore carpetas y ficheros:
 
+_.gitignore_
 
+```bash
+.cache/
+dist/
+node_modules/
+package-lock.json
+```
+
+> .gitignore acepta ciertos tipos de comodines: https://www.atlassian.com/es/git/tutorials/saving-changes/gitignore#git-ignore-patterns
+
+- Si grabamos a volvemos a hacer un _git status_ podemos ver que ya sólo
+  aparecen los ficheros que queremos subir:
+
+```bash
+git status
+```
+
+Ahora si podemos pasarlos a staging:
+
+```bash
+git add .
+```
+
+Y podemos comitearlo a nuestra base de datos local
+
+```bash
+git commit -m "commit inicial"
+```
+
+Ya lo tenemos en local es hora de subirlo a nuestro repositorio en la
+nube, no queremos que se nos rompa el disco duro y perdamos todo el trabajo.
+
+Para ello voy a crear un repo en la web de Github, esta vez no le pido
+que meta un readme ni nada, lo quiero en blanco para poder apuntar
+a él desde el local.
+
+** Vamos a Github y creamos el repo**
+
+Copíamos la url del repo (sea ssh o https).
+
+(en el ejemplo https://github.com/brauliodiez/borrar-local.git)
+
+- Y le indicamos que vamos a añadir un servidor que llamaremos _origin_
+  hay irán los push que enviemos.
+
+```bash
+git remote add origin https://github.com/...
+```
+
+Ya podemos subir los archivos de Github, al ser la primera vez y
+estar el repo vacío, tenemos que añadirle algo más de info al push:
+
+- set upstream: este flag enlaza la rama local con la que hay en el
+  servidor, en caso de que no exista la crea.
+
+- También tenemos que indicarle la rama de trabajo.
+
+```bash
+git push --set-upstream origin master
+```
+
+> Existen settings para que este comportamiento lo haga por defecto
+> y solo tengamos que poner un _git push_ (en teoría el 99% de las
+> veces vamos a querer tener el mismo nombre de rama en cliente que
+> en servidor)
+
+Si no vamos al portal de Github y refrescamos la página del repo,
+podemos ver que se han subido lo cambios.
