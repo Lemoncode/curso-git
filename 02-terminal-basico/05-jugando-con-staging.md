@@ -1,16 +1,10 @@
 # Jugando con staging
 
-Hacer los pasos perfectos, está bien, pero somos humanos y de cuando en
-cuando metemos alguna cagada que otra, por ejemplo que pasemos a staging
-un montón de ficheros temporales y nos quedemos con la cara de ¿Y ahora
-que hago?...
+Hacer los pasos perfectos, está bien, pero somos humanos y de cuando en cuando metemos alguna cagada que otra, por ejemplo que pasemos a *staging* un montón de ficheros temporales y nos quedemos con la cara de ¿Y ahora qué hago?...
 
-En esta sección aprendemos a manejarnos con staging, pero no cubrimos
-como deshacer commits, esto lo veremos en la sección de avanzado, ya que
-este paso puede ser mucho más delicado.
+En esta sección aprendemos a manejarnos con *staging*, pero no cubrimos como deshacer *commits*, esto lo veremos en la sección de avanzado, ya que este paso puede ser mucho más delicado.
 
-Seguimos con el ejemplo anterior de repositorio local (también valdría
-otro anterior que tengas abierto)
+Seguimos con el ejemplo anterior de repositorio local (también valdría otro anterior que tengas abierto)
 
 Vamos a crear un fichero que se llame
 
@@ -26,35 +20,31 @@ _./src/definitivo.txt_
 Soy un fichero definitivo
 ```
 
-Andamos un poco despistados y añadimos ambos ficheros a staging
+Andamos un poco despistados y añadimos ambos ficheros a *staging*
 
 ```bash
 git add .
 ```
 
-Cuando hacemos un _git status_ nos damos cuenta de la cagada :-@
+Cuando hacemos un _git status_ nos damos cuenta de la cagada:-@
 
 ```bash
 git status
 ```
 
-Aquí tenemos dos soluciones, si son un porrón de ficheros, igual
-recoger carretes y quitar de staging todos los ficheros (botón
-de pánico):
+Aquí tenemos dos soluciones, si es un porrón de ficheros, igual recoger carretes y quitar de staging todos los ficheros (botón de pánico):
 
 ```bash
 git reset
 ```
 
-Si es sólo un fichero, podemos indicarle directamente el fichero
-a pasar de staging a modificado:
+Si es sólo un fichero, podemos indicarle directamente el fichero a pasar de *staging* a modificado:
 
 ```bash
 git reset HEAD ./src/temporal.txt
 ```
 
-Si ahora hacemos un git status podemos ver que sólo esta en staging el
-fichero que esperabamos.
+Si ahora hacemos un *git statu*s podemos ver que sólo está en *staging* el fichero que esperábamos.
 
 Veamos otro caso
 
@@ -70,26 +60,21 @@ Y vamos a modificar el fichero _index.html_
 <html>
   <body>
 -    <h1>Ola Git</h1>
-+    <h1>Aqui va un cambios</h1>
++    <h1>Aqui va un cambio</h1>
     <script src="./index.js"></script>
   </body>
 </html>
 ```
 
-Si hacemos un _git status_ podemos ver que hay dos ficheros nuevos,
-y uno existente con modificaciones, los tres no están en el area
-de staging.
+Si hacemos un _git status_ podemos ver que hay dos ficheros nuevos, y uno existente con modificaciones, los tres no están en el área de staging.
 
 ```bash
 git status
 ```
 
-Imaginemos que todo el trabajo que hemos hecho eran pruebas tontas,
-y queremos volver al punto inicial en el que estabamos, en este
-caso tenemos dos comandos a mano.
+Imaginemos que todo el trabajo que hemos hecho eran pruebas tontas, y queremos volver al punto inicial en el que estábamos, en este caso tenemos dos comandos a mano.
 
-El primero devuelve al estado inicial los ficheros trackeados, es decir pierdes
-las modificaciones, PEEERO no toca los ficheros que son nuevos.
+El primero devuelve al estado inicial los ficheros trackeados, es decir pierdes las modificaciones, PEEERO no toca los ficheros que son nuevos.
 
 ```bash
 git checkout -- .
@@ -101,35 +86,29 @@ Si echamos un ojo a lo que ha pasado:
 git status
 ```
 
-Tenemos que _index.html_ a vuelto al estado inicial.
+Tenemos que _index.html_ ha vuelto al estado inicial.
 
-Y los fichero nuevos, al no estar en la rama incial se quedan como estan.
+Y los ficheros nuevos, al no estar en la rama inicial se quedan como están.
 
-En 2019 apareció un nuevo comando _git restore_ este nos elimina los cambios
-de ficheros trackeados estén o no en staging
+En 2019 apareció un nuevo comando _git restore_ este nos elimina los cambios de ficheros trackeados estén o no en *staging*.
 
 ```bash
 git restore .
 ```
 
-> Si te sale este error _git: 'restore' is not a git command._ puede que tengas una versión antigua de Git, para saber en que versión estás ejecuta
-> _git --version_
+> Si te sale este error _git: 'restore' is not a git command_ puede que tengas una versión antigua de Git, para saber en qué versión estás ejecuta _git --version_
 
-¿Y si queremos borrar los archivos _untracked_? Mucho cuidado con esta opción,
-nos cargamos esos ficheros sin vuelta atrás.
+¿Y si queremos borrar los archivos _untracked_? Mucho cuidado con esta opción, nos cargamos esos ficheros sin vuelta atrás.
 
 Para ello:
 
-Primero corremos una simulación y le pedimos que nos liste cuales son los ficheros
-que se va a cargar:
+Primero corremos una simulación y le pedimos que nos liste cuales son los ficheros que se va a cargar:
 
 ```bash
 git clean -n
 ```
 
-Una vez que revisamos los ficheros y nos aseguramos que los queremos eliminar
-ya ejecutamos el _clean_ (fijate el peligro que tiene que Git te obliga
-a que le pongas el _--force_)
+Una vez que revisamos los ficheros y nos aseguramos que los queremos eliminar ya ejecutamos el _clean_ (fíjate el peligro que tiene que Git te obliga a que le pongas el _--force_)
 
 ```bash
 git clean --force
