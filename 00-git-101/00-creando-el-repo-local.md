@@ -1,12 +1,12 @@
-# Creando el repo en local
+# Creando el repositorio en local
 
-## Introduccion
+## Introducción
 
-Cuando pensamos una repositorio de código fuente se nos viene a la cabeza
+Cuando pensamos un repositorio de código fuente se nos viene a la cabeza
 un servidor al que nos conectamos y con el que interactuamos para bajar o
 subir ficheros.
 
-Git es un repositorio distribuido, ... podemos arrancar por sólo tenerlo
+_Git_ es un repositorio distribuido,... podemos arrancar por sólo tenerlo
 en nuestra máquina, ¿Qué ganamos con esto?
 
 - Podemos tener un control de versiones y poder volver atrás si hace falta
@@ -16,8 +16,8 @@ en nuestra máquina, ¿Qué ganamos con esto?
 
 ## Pasos
 
-Vamos arrancar por instalar Git en nuestra máquina, para ello
-podemos instalarlo de esta url: https://git-scm.com/downloads
+Vamos arrancar por instalar _Git_ en nuestra máquina, para ello
+podemos instalarlo de esta _url_: *https://git-scm.com/downloads*
 
 - Partimos de un proyecto web simple, lo puedes encontrar en la subcarpeta
   _material_, vamos a copiarlo a otra carpeta de mi disco duro, lo podemos
@@ -48,43 +48,42 @@ index.js
 ```
 
 Si te fijas _node_modules_ es una carpeta temporal, que no debemos de subir
-al repositorio (el resto si), antes de iniciar nuestro repo, vamos a añadir
+al repositorio (el resto sí), antes de iniciar nuestro repo, vamos a añadir
 un fichero que llamaremos _.gitignore_ en nuestro raíz (muy importante que
 el nombre sea ese, incluyendo el punto)), en este fichero vamos a indicarle
 que ignore la carpeta _node_modules_
 
-.gitignore
+_.gitignore_
 
 ```
 /node_modules
 ```
 
-> El ficher git ignore soporta una serie de patrones, lo veremos
+> El fichero .gitignore soporta una serie de patrones, lo veremos
 > más adelante en el curso, más info: https://git-scm.com/docs/gitignore
 
 De esta forma evitaremos subir ficheros no deseados a nuestro repositorio.
 
-- Vamos ahora a empezar a trabajar con git en local, lo primero que hacemos
+- Vamos ahora a empezar a trabajar con _git_ en local, lo primero que hacemos
   es inicializar nuestro repo en local, para ello vamos al terminal:
 
 ```bash
 git init
 ```
 
-- Ahora queremos guardar en la base de datos de git nuestro codigo,
+- Ahora queremos guardar en la base de datos de _git_ nuestro código,
   en Git trabajamos en dos fases, primero pasamos los ficheros a un
-  paso que llaman "staging" y después de "staging" lo comiteamos a la
+  paso que llaman _"staging"_ y después de _"staging"_ lo comiteamos a la
   base de datos en local:
 
-Añadimos todos los ficheros a fase stage (esto lo hacemos con el comodín
-.)
+Añadimos todos los ficheros a fase _stage_ (esto lo hacemos con el comodín .)
 
 ```bash
 git add .
 ```
 
 Y ahora vamos comitearlo en nuestra base de datos en local, añadimos
-también un mensaje de commit:
+también un mensaje de _commit_:
 
 ```bash
 git commit -m "hola git"

@@ -9,7 +9,7 @@ más soporte:
 
 https://github.blog/changelog/2021-08-12-git-password-authentication-is-shutting-down/
 
-¿ Por qué no es buena idea usar el usuario y clave estándar?
+¿Por qué no es buena idea usar el usuario y clave estándar?
 
 - Estás exponiendo usuario y clave de administrador.
 - Si alguien te lo roba podría hacer lo que quisiera, no se limita acceso.

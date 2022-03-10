@@ -1,19 +1,18 @@
 # Personal Access Token
 
 Hasta ahora, la forma más fácil de poner clonar un repositorio en _Github_ era
-usando la URL que usa el protocolo
-_HTTPS_. Estas URLs tienen el formato
-`https://github.com/<nombre-usuario>/<nombre-repositorio>.git` y para
+usando la *URL* que usa el protocolo *HTTPS*. Estas *URLs* tienen el formato
+*`https://github.com/<nombre-usuario>/<nombre-repositorio>.git`* y para
 clonarlo solamente necesitamos identificarnos con nuestro nombre de usuario y
 la contraseña.
-El equipo de _Github_ anunció en julio del 2020 la intención de eliminar la
+El equipo de _Github anunció en julio del 2020 la intención de eliminar la
 autenticación de _Git_ usando contraseñas, y en su lugar podemos identificarnos usando
 _Personal Access Token_, claves _SSH_, _Github App_, etc.
-A partir del 13 de agosto del 2021 dejará de estar operativo, por lo que en
+Desde el 13 de agosto del 2021 ha dejado de estar operativo, por lo que en
 esta serie de vídeos veremos las diferentes alternativas que tenemos usando
 el sistema operativo _Windows_.
 
-En este vídeo veremos como crear un _Personal Access Token_ y utilizarlo para
+En este vídeo veremos cómo crear un _Personal Access Token_ y utilizarlo para
 clonar un repositorio de _Github_ en la plataforma _Windows_.
 
 # Manos a la obra
