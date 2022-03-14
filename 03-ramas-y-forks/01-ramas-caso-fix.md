@@ -63,7 +63,7 @@ _index.html_
 </html>
 ```
 
-Y lo commiteamos de un tirón:
+Y lo commiteamos:
 
 ```bash
 git add .
@@ -175,4 +175,46 @@ git log --oneline --decorate --graph --all
 El commit anterior de master era justo el consecutivo de la ramaB así
 que sólo hace falta mover el puntero.
 
-Volemos a nuestra rama caso1
+Volvemos a nuestra rama caso1
+
+```bash
+git checkout caso1
+```
+
+Añadimos un nuevo fichero
+
+_./business.js_
+
+```js
+console.log("Hello from business");
+```
+
+Lo añadimos y commiteamos:
+
+```bash
+git add .
+```
+
+```bash
+git commit -a -m "Caso completo"
+```
+
+Vamos a mezlcar el caso en máster:
+
+```bash
+git checkout master
+```
+
+```bash
+git merge caso1 -m "mezclado caso1"
+```
+
+Fijate que aquí no se puede aplicar un fast forward merge,
+porque el commit que creamos no es el direto de la rama
+a la que vamos a mezclar.
+
+Vamos a ver como han quedado las ramas
+
+```bash
+git log --oneline --decorate --graph --all
+```
