@@ -8,14 +8,14 @@ en la nube.
 
 Arrancamos con nuestro proyecto:
 
-Vamos a crear una carpeta, podemos llamar _miproyecto_
+Vamos a crear una carpeta, podemos llamar _practica_
 
 ```bash
-mkdir miproyecto
+mkdir practica
 ```
 
 ```bash
-cd miproyecto
+cd practica
 ```
 
 Vamos a inicializar nuestro proyecto de Git:
@@ -75,7 +75,15 @@ de github y en efecto vemos que todo se ha subido)
 Vamos ahora a replicar el issue del conflicto, para ello
 lo interesante es que un alumno se ponga en su maquina:
 
+Lo primero le voy a dar permiso al alumno de lectura y
+escritura (que pasaría si no, la ser publico funcionaría
+la bajado pero no la subida)
+
 **Alumno clona repo en su maquina**
+
+```bash
+git clone https://github.com/...
+```
 
 El alumno crea rama en local:
 
