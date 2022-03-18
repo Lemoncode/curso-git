@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Cando pensamos nun repositorio de código fonte vensenos á  cabeza ...
+AA Cando pensamos nun repositorio de código fonte vensenos á  cabeza ...
 un servidor al que nos conectamos y con el que interactuamos para bajar o
 subir ficheros.
 
