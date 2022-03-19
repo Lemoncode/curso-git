@@ -63,7 +63,7 @@ git commit -am "actualizaciones"
 ```
 
 ```bash
-git push
+git push -u origin otrarama
 ```
 
 Ahora en vez de mezclar la rama desde el terminal, vamonos al portal de git:

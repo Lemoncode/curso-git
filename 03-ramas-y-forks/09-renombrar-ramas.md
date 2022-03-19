@@ -41,7 +41,7 @@ git commit -am "info readme"
 ```
 
 ```bash
-git push
+git push -u origin malnombre
 ```
 
 Ok, ya tenemos la rama en local y en servidor, nos hemos dado cuenta
