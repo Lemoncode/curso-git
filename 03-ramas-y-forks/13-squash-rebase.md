@@ -214,3 +214,9 @@ git checkout master
 ```bash
 git merge micaso1
 ```
+
+Y puedo borrar la rama de caso1
+
+```bash
+git branch -d caso1
+```
