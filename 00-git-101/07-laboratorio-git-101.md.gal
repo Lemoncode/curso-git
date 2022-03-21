@@ -1,0 +1,31 @@
+# Laboratorio Git 101
+
+## Enunciado
+
+Crea unha carpeta en local.
+
+Arranca un repositorio en local.
+
+Añade dous ficheiros de texto ao repositorio.
+
+_hola.txt_
+
+```
+hola
+```
+
+_git.txt_
+
+```
+git
+```
+
+Create unha conta en github (si non a tes xa).
+
+Crea un proxecto en blanco en github, chamao _holagit_.
+
+Sube o repositorio local ao que acabas de crear en Github.
+
+## Entregable
+
+Enviame a url da páxina do teu repositorio en Github.
