@@ -11,8 +11,8 @@ _Personal Access Token_, claves _SSH_, _Github App_, etc.
 Desde o 13 de agosto del 2021 deixou de estar operativo, polo que nesta serie de vídeos veremos as diferentes alternativas que temos usando
 o sistema operativo _Windows_.
 
-En este vídeo veremos cómo crear un _Personal Access Token_ y utilizarlo para
-clonar un repositorio de _Github_ en la plataforma _Windows_.
+Neste vídeo veremos como crear un _Personal Access Token_ e utilizalo para
+clonar un repositorio de _Github_ na plataforma _Windows_.
 
 # Manos a la obra
 
