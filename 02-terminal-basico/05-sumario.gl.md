@@ -1,6 +1,6 @@
 # Sumario Terminal Básico
 
-Ata aquí aprendimos a "nos defender como gato panza arriba con *Git*".
+Ata aquí aprendemos a "nos defender como gato panza arriba con *Git*".
 
 No seguinte módulo aprenderemos a nos manexar con polas e logo nos familiarizaremos con interfaces gráficas que nos farán a vida moi sinxela no traballo con *Git*.
 
