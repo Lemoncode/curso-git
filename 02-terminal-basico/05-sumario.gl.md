@@ -11,7 +11,7 @@ Para que narices teño que aprender a me manexar coa pantalla negra se hai inter
 - Os interfaces gráficos nos abstraeron do baixo nivel; iso é bo, pero tamén pode ser malo se non sabemos que é o que estamos a facer.
 - Cando creamos un *script* de CI/CD, é dicir, un set de instrucións para que un proceso as execute, as temos que escribir en comandos.
 
-Como conclusión:
+Como conclusión: 
 
 - Empregar interfaces gráficas no teu día a día para te manexar con *Git* é acertado; afórrate moito tempo.
 - Practicar co terminal é moi importante; pódelo empregar no teu día a día, ou alo menos coñecer os comandos principais. Nunca sabes cando che serán necesarios.
