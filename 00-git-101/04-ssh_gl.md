@@ -8,7 +8,7 @@ operativo _Windows_ e configuralas en _Github_ para poder identificarnos.
 
 # Ao choio
 
-Para poder xerar claves _SSH_ podemos utilizar a ferramenta `ssh- keygen`,
+Para poder xerar claves _SSH_ podemos empregar a ferramenta `ssh- keygen`,
 esta ferramenta vén normalmente instalada en calquera distribución
 _Linux_ ou _MacOS_ e para o caso de _Windows_, necesitaremos un terminal con _bash_ (por exemplo o terminal que vén ao instalar _git_) xa que tamén
 nos instala dita librería.
