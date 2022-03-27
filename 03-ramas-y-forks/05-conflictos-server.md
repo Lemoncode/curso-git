@@ -125,7 +125,7 @@ git commit -am "actualizacion contenido"
 Si queremos podemos subirlo a servidor
 
 ```bash
-git push -u mirama
+git push -u origin mirama
 ```
 
 Ahora saltamos a la maquina del profesor
