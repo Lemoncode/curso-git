@@ -1,0 +1,3 @@
+Persoal Access  Token
+
+Ata o de agora, a forma máis fácil de poñer clonar un repositorio en  Github era usando a URL que usa o protocolo  HTTPS. Estas  URLs teñen o formato  https:// github. com//. git e para clonalo soamente necesitamos identificarnos co noso nome de usuario e o contrasinal. O equipo de _ Github anunciou en xullo do 2020 a intención de eliminar a autenticación de  Git usando contrasinais, e no seu lugar podemos identificarnos usando Persoal Access  Token, claves  SSH,  Github App, etc. Desde o 13 de agosto do 2021 deixou de estar operativo, polo que nesta serie de vídeos veremos as diferentes alternativas que temos usando o sistema operativo Windows.
