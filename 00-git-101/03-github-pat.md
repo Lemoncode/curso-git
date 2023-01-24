@@ -5,14 +5,14 @@ usando la *URL* que usa el protocolo *HTTPS*. Estas *URLs* tienen el formato
 *`https://github.com/<nombre-usuario>/<nombre-repositorio>.git`* y para
 clonarlo solamente necesitamos identificarnos con nuestro nombre de usuario y
 la contraseña.
-El equipo de _Github anunció en julio del 2020 la intención de eliminar la
+El equipo de _Github_ anunció en julio del 2020 la intención de eliminar la
 autenticación de _Git_ usando contraseñas, y en su lugar podemos identificarnos usando
 _Personal Access Token_, claves _SSH_, _Github App_, etc.
 Desde el 13 de agosto del 2021 ha dejado de estar operativo, por lo que en
 esta serie de vídeos veremos las diferentes alternativas que tenemos usando
 el sistema operativo _Windows_.
 
-En este vídeo veremos cómo crear un _Personal Access Token_ y utilizarlo para
+En este ejemplo veremos cómo crear un _Personal Access Token_ y utilizarlo para
 clonar un repositorio de _Github_ en la plataforma _Windows_.
 
 # Manos a la obra
@@ -85,14 +85,14 @@ _Personal Access Token_ como contraseña:
 
 ```bash
 git clone https://github.com/<nombre-usuario>/<nombre-repositorio>.git .
-> Username for 'https://github.com': <nuestro-usuario>
-> Password for 'https://...@github.com': <personal-access-token>
 
 ```
 
-> Recordar si estas en parallels para pegar
-> usar CTRL+SHIFT+Click ratón (ver en keyboards
-> vale como paste para git bash)
+En este paso, salta un diálogo para introducir nuestro token:
+
+![Diálogo para introducir el Personal Access Token de Github](./content/15-dialogo-pat.png)
+
+> Ojo: puede que incluso te salten 2 diálogos, simplemente introduce el PAT en ambos.
 
 Así, tenemos disponibles estos credenciales mientras el token sea válido
 (recuerda que cuando expiré tendrás que renovarlo desde la propia web de
