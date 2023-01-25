@@ -19,7 +19,7 @@ Abrimos el terminal de _bash_ y ejecutamos el siguiente comando:
 ```bash
 ssh-keygen -m PEM -t rsa -C <nuestro-email>
 
-> Enter file in which to save the key (/c/Users/<nombre-usuario>/.ssh/id_rsa): `./id_rsa`
+> Enter file in which to save the key (/c/Users/<nombre-usuario>/.ssh/id_rsa): (Pulsamos enter para que coja esa ruta por defecto)
 > Enter passphrase (empty for no passphrase): `Pulse Enter for empty`
 > Enter same passphrase again: `Pulse Enter for empty`
 ```
@@ -65,7 +65,7 @@ creado anteriormente, y copiar la *URL* usando el protocolo _SSH_
 
 ¡Vamos a probarlo! Podemos abrir cualquier terminal en nuestra máquina local
 donde podamos ejecutar los comandos de *git*. Vamos a repetir los pasos del
-vídeo anterior para asegurarnos de que borramos todos los credenciales para
+ejemplo anterior para asegurarnos de que borramos todos los credenciales para
 forzar a que los pida de nuevo:
 
 ![Buscamos Administrador de credenciales](./content/10-buscar-administrador-credenciales.png)
